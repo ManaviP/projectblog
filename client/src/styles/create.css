@@ -1,0 +1,110 @@
+/* CreatePost.css */
+
+.create-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 500px;
+  }
+  
+  .create-post h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .create-post form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .create-post form label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .create-post form input,
+  .create-post form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    resize: vertical; /* Allow resizing for textarea */
+  }
+  
+  .create-post form button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s; /* Add smooth hover effect */
+  }
+  
+  .create-post form button:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+  }
+  /* Home.css */
+.home-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .home-container h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .home-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .home-container li {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .home-container li h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #0f81c7;
+  }
+  
+  .home-container li p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .home-container a {
+    color: #0f81c7;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .home-container a:hover {
+    text-decoration: underline;
+  }
+  
+  .home-container .create-post-link {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
