@@ -23,15 +23,15 @@ This is a simple blog application that allows users to create, read, update, and
 ## Installation
 
 ### Backend Setup
--cd backend
--npm install
--MONGO_URI=<your_mongodb_connection_string>
--node app.js
+- cd backend
+- npm install
+- MONGO_URI=<your_mongodb_connection_string>
+- node app.js
 
 ### Frontend
--cd frontend
--npm install
--npm start
+- cd frontend
+- npm install
+- npm start
 
 The backend will be running on http://localhost:5000.
 The frontend will be running on http://localhost:3000
