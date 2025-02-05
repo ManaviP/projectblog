@@ -5,13 +5,7 @@ import { getPosts } from "../api/api";
 const Home = () => {
   const [posts, setPosts] = useState([]);
 
-  useEffect(() => {
-    const fetchPosts = async () => {
-      const response = await getPosts();
-      setPosts(response.data);
-    };
-    fetchPosts();
-  }, []);
+  
 
   // Inline styles
   const styles = {
@@ -67,7 +61,6 @@ const Home = () => {
         {posts.map((post) => (
           <li key={post._id} style={styles.postItem}>
             <h2 style={styles.postTitle}>{post.title}</h2>
-            <p style={styles.postSummary}>{post.summary}</p>
             <Link to={`/post/${post._id}`} style={styles.link} 
                   onMouseEnter={(e) => e.target.style.textDecoration = styles.linkHover.textDecoration} 
                   onMouseLeave={(e) => e.target.style.textDecoration = 'none'}>
