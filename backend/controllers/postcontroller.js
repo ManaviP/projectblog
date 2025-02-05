@@ -10,12 +10,11 @@ exports.createPost = async (req, res) => {
       return res.status(400).json({ error: "Title and content are required" });
     }
 
-    // Generate summary using node-summarizer
-    const summary = await generateSummary(content);
+ 
 
     // Create and save the new post
     const newPost = new Post({ title, content, summary });
-    await newPost.save();
+   
 
     // Send back the new post
     res.status(201).json(newPost);
